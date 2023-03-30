@@ -15,7 +15,8 @@
     <section class = "header">
         <nav>
             <a href="Index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfs5Exv4qYcPnOuhjSC92g7CvFXE2wLwJxYpO5YgRFgg&s"></a>
-            <div class="nav-links">
+            <div class="nav-links"  id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -24,7 +25,7 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
-            
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
         </nav>
         <div class="text-box">
             <h1>Kenya Best University</h1>
@@ -36,6 +37,84 @@
         </div>
 
     </section>
-    
+
+
+    <!--course section-->
+
+
+    <section class="course">
+     <h1>Courses offered</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laudantium,
+         similique blanditiis deserunt totam, assumenda ea odit nemo cumque eligendi ipsum ullam.</p>
+    <div class="row">
+
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Minus incidunt at eaque pariatur sit repudiandae alias reprehenderit, suscipit eius eveniet, perspiciatis, iusto perferendis!
+                  Eius quae nobis est excepturi placeat suscipit.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Minus incidunt at eaque pariatur sit repudiandae alias reprehenderit, suscipit eius eveniet, perspiciatis, iusto perferendis!
+                  Eius quae nobis est excepturi placeat suscipit.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Minus incidunt at eaque pariatur sit repudiandae alias reprehenderit, suscipit eius eveniet, perspiciatis, iusto perferendis!
+                  Eius quae nobis est excepturi placeat suscipit.</p>
+        </div>
+    </div>
+
+    </section>
+
+    <!--campus-->
+
+
+    <section class="campus">
+        <h1>Our National Campus</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="https://www.mku.ac.ke/wp-content/uploads/2021/03/Thika-Main-Campus-1.jpg">
+                <div class="layer">
+                    <h3>Thika</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCzcP4lf4slqR7Wgj04aGvB5uBx_zBbm6XahKD568bA&s">
+                <div class="layer">
+                    <h3>Nakuru</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://nnmedia.nation.africa/uploads/2020/03/Mount-Kenya-University-1320x744.jpg">
+                <div class="layer">
+                    <h3>Nairobi</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!--Javascript actions-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+
 </body>
 </html>
